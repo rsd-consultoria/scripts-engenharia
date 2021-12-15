@@ -75,13 +75,14 @@ function centroGravidadeY(coordenadas::Array{Coordenada})::Float32
     return ygc * (1 / (6 * areaPoligono(coordenadas)))
 end
 
+# Ordem deve ser horária
 coordenadas = [
+    Coordenada(53f0, 0f0)
+    Coordenada(53f0, 43f0)
     Coordenada(0f0, 43f0)
     Coordenada(0f0, 60f0)
     Coordenada(70f0, 60f0)
     Coordenada(70f0, 0f0)
-    Coordenada(53f0, 0f0)
-    Coordenada(53f0, 43f0)
 ]
 
 # Deve retornar 1921 cm^2
