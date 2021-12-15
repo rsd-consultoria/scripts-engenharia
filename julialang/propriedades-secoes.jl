@@ -90,5 +90,5 @@ coordenadas = [
 # Deve retornar 45.084 cm
 @show centroGravidadeX(coordenadas)
 
-# Deve retornar 40.084 cm^2
+# Deve retornar 40.084 cm
 @show centroGravidadeY(coordenadas)
