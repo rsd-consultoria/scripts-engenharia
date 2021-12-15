@@ -1,3 +1,6 @@
+# Copyright(c) Rafael Dias
+# MIT Licensed
+
 module PropriedadesSecoes
     mutable struct Coordenada
         x::Float32
@@ -123,30 +126,4 @@ module PropriedadesSecoes
 
         return ygc * (1 / (6 * areaPoligono(coordenadas)))
     end
-
 end
-
-# Ordem deve ser horária
-coordenadas = [
-    PropriedadesSecoes.Coordenada(53f0, 0f0)
-    PropriedadesSecoes.Coordenada(53f0, 43f0)
-    PropriedadesSecoes.Coordenada(0f0, 43f0)
-    PropriedadesSecoes.Coordenada(0f0, 60f0)
-    PropriedadesSecoes.Coordenada(70f0, 60f0)
-    PropriedadesSecoes.Coordenada(70f0, 0f0)
-]
-
-# Deve retornar 1921 cm^2
-@show PropriedadesSecoes.areaPoligono(coordenadas)
-
-# Deve retornar 45.084 cm
-@show PropriedadesSecoes.centroGravidadePoligonoX(coordenadas)
-
-# Deve retornar 40.084 cm
-@show PropriedadesSecoes.centroGravidadePoligonoY(coordenadas)
-
-# Deve retornar 260 cm
-@show PropriedadesSecoes.perimetroPoligono(coordenadas)
-
-# Deve retornar 243 cm
-@show PropriedadesSecoes.comprimentoEntrePontos(coordenadas)
