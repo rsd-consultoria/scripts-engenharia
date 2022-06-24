@@ -1,0 +1,30 @@
+[no.A]
+    x=0.0
+    y=0.0
+    z=0.0
+    restricao.x=1
+    restricao.y=1
+    restricao.z=0
+
+[no.B]
+    x=1.0
+    y=0.0
+    z=0.0
+    restricao.x=1
+    restricao.y=1
+    restricao.z=0
+
+[elemento.V1]
+    descricao="Viga V1"
+    no=["A", "B"]
+    material="CONC"
+    secao="PerfilI"
+
+[material.CONC]
+    descricao="Concreto 20MPa"
+    poisson=1.0e-6
+    young=1.0e-6
+
+[secao.PerfilI]
+    area=12.34
+    
